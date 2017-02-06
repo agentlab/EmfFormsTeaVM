@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cat" nsURI="http://eclipse/org/emf/ecp/makeithappen/model/cat"
+    nsPrefix="org.eclipse.emf.ecp.makeithappen.model.cat">
+  <eClassifiers xsi:type="ecore:EClass" name="Action">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sleep" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eat" eType="#//Eat"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Info">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="age" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="catbreed" eType="#//Breeds"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Breeds">
+    <eLiterals name="Unknown"/>
+    <eLiterals name="Abyssinian"/>
+    <eLiterals name="Balinese"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Eat">
+    <eLiterals name="no"/>
+    <eLiterals name="yes"/>
+  </eClassifiers>
+</ecore:EPackage>
